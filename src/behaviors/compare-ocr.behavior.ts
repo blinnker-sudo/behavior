@@ -1,5 +1,4 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { RegisterBehavior } from '../behavior';
 import {
   Behavior,
   BehaviorContext,
@@ -14,7 +13,6 @@ interface CompareOcrResult {
 }
 
 @Injectable()
-@RegisterBehavior('compare.ocr')
 export class CompareOcrBehavior
   implements Behavior<DataWorkflowDto, CompareOcrResult>
 {

@@ -1,9 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { RegisterBehavior } from '../behavior';
 import { Behavior, BehaviorContext } from '../contracts';
 
 @Injectable()
-@RegisterBehavior('register.sat')
 export class RegisterSatBehavior implements Behavior {
   readonly name = 'register.sat';
 
